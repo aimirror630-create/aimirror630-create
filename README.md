@@ -7,6 +7,13 @@
   Product:       AI-аватары реальных людей (живых и ушедших) — доступны через
                  телефонный звонок по QR-коду, размещённому на физическом
                  объекте (здание, музей, памятник, мемориал).
+  Roster:        40+ оцифрованных личностей: Эйнштейн, Тесла, Юнг, Фрейд,
+                 Пушкин, Цой, Бодров, Гагарин, Цезарь, Ленин, Сталин, Линкольн,
+                 Спартак, Сунь-цзы, Ип Ман, Брюс Ли, Ванга, Монтессори, Дарвин,
+                 Леонардо да Винчи, Рокфеллер, Гейтс, Баффет, Мавроди, Джобс,
+                 Маск, Сатоши Накамото, Жак Фреско, Диана, Жириновский,
+                 Аль Капоне, Эскобар, Саша Белый, Бэтмен, Дарт Вейдер, Кришна,
+                 Иисус, Мухаммед, Иван Грозный, Алексей Сибирский и др.
   Live demo:     https://mirror-ai.app/matrix/  (Владимир Тарасов,
                  купец XIX века; умер 100 лет назад; оцифрован; можно позвонить)
   Founded by:    aimirror630-create  (github.com/aimirror630-create)
@@ -86,6 +93,87 @@
 </td>
 </tr>
 </table>
+
+---
+
+## `// 40+ исторических личностей в Mirror`
+
+Тарасов — первый *публично* доступный. Внутри платформы — **40+ оцифрованных личностей** из 20+ категорий: наука, философия, музыка, литература, политика, спорт, бизнес, мистика. Каждая — с уникальным голосом, памятью и манерой речи.
+
+<table>
+<tr>
+  <td align="center" width="16.6%"><img src="./assets/avatars/einstein.jpg" width="120" alt="Эйнштейн"/><br/><sub><b>Эйнштейн</b><br/>наука</sub></td>
+  <td align="center" width="16.6%"><img src="./assets/avatars/tesla.jpg" width="120" alt="Тесла"/><br/><sub><b>Тесла</b><br/>наука</sub></td>
+  <td align="center" width="16.6%"><img src="./assets/avatars/darwin.jpg" width="120" alt="Дарвин"/><br/><sub><b>Дарвин</b><br/>наука</sub></td>
+  <td align="center" width="16.6%"><img src="./assets/avatars/jung.jpg" width="120" alt="Юнг"/><br/><sub><b>Юнг</b><br/>психология</sub></td>
+  <td align="center" width="16.6%"><img src="./assets/avatars/freud.jpg" width="120" alt="Фрейд"/><br/><sub><b>Фрейд</b><br/>психология</sub></td>
+  <td align="center" width="16.6%"><img src="./assets/avatars/montessori.jpg" width="120" alt="Монтессори"/><br/><sub><b>Монтессори</b><br/>педагогика</sub></td>
+</tr>
+<tr>
+  <td align="center"><img src="./assets/avatars/pushkin.jpg" width="120" alt="Пушкин"/><br/><sub><b>Пушкин</b><br/>литература</sub></td>
+  <td align="center"><img src="./assets/avatars/tsoi.jpg" width="120" alt="Цой"/><br/><sub><b>Виктор Цой</b><br/>музыка</sub></td>
+  <td align="center"><img src="./assets/avatars/bodrov.jpg" width="120" alt="Бодров"/><br/><sub><b>Сергей Бодров</b><br/>кино</sub></td>
+  <td align="center"><img src="./assets/avatars/gagarin.jpg" width="120" alt="Гагарин"/><br/><sub><b>Гагарин</b><br/>космос</sub></td>
+  <td align="center"><img src="./assets/avatars/diana.jpg" width="120" alt="Диана"/><br/><sub><b>Принцесса Диана</b><br/>личности</sub></td>
+  <td align="center"><img src="./assets/avatars/jesus.jpg" width="120" alt="Иисус"/><br/><sub><b>Иисус Христос</b><br/>религия</sub></td>
+</tr>
+<tr>
+  <td align="center"><img src="./assets/avatars/caesar.jpg" width="120" alt="Цезарь"/><br/><sub><b>Ю. Цезарь</b><br/>история</sub></td>
+  <td align="center"><img src="./assets/avatars/lenin.jpg" width="120" alt="Ленин"/><br/><sub><b>Ленин</b><br/>политика</sub></td>
+  <td align="center"><img src="./assets/avatars/stalin.jpg" width="120" alt="Сталин"/><br/><sub><b>Сталин</b><br/>власть</sub></td>
+  <td align="center"><img src="./assets/avatars/lincoln.jpg" width="120" alt="Линкольн"/><br/><sub><b>Линкольн</b><br/>политика</sub></td>
+  <td align="center"><img src="./assets/avatars/spartacus.jpg" width="120" alt="Спартак"/><br/><sub><b>Спартак</b><br/>стратегия</sub></td>
+  <td align="center"><img src="./assets/avatars/sunzu.jpg" width="120" alt="Сунь-цзы"/><br/><sub><b>Сунь-цзы</b><br/>стратегия</sub></td>
+</tr>
+<tr>
+  <td align="center"><img src="./assets/avatars/bruce_lee.jpg" width="120" alt="Брюс Ли"/><br/><sub><b>Брюс Ли</b><br/>философия</sub></td>
+  <td align="center"><img src="./assets/avatars/ipman.jpg" width="120" alt="Ип Ман"/><br/><sub><b>Ип Ман</b><br/>боевые искусства</sub></td>
+  <td align="center"><img src="./assets/avatars/vanga.jpg" width="120" alt="Ванга"/><br/><sub><b>Ванга</b><br/>мистика</sub></td>
+  <td align="center"><img src="./assets/avatars/sibirsky.jpg" width="120" alt="Сибирский"/><br/><sub><b>А. Сибирский</b><br/>экология</sub></td>
+  <td align="center"><img src="./assets/avatars/saburov.jpg" width="120" alt="Сабуров"/><br/><sub><b>Сабуров</b><br/>культура</sub></td>
+  <td align="center"><img src="./assets/avatars/vader.jpg" width="120" alt="Вейдер"/><br/><sub><b>Дарт Вейдер</b><br/>поп-культура</sub></td>
+</tr>
+<tr>
+  <td align="center"><img src="./assets/avatars/jobs.jpg" width="120" alt="Джобс"/><br/><sub><b>Стив Джобс</b><br/>технологии</sub></td>
+  <td align="center"><img src="./assets/avatars/musk.jpg" width="120" alt="Маск"/><br/><sub><b>Илон Маск</b><br/>технологии</sub></td>
+  <td align="center"><img src="./assets/avatars/gates.jpg" width="120" alt="Гейтс"/><br/><sub><b>Билл Гейтс</b><br/>бизнес</sub></td>
+  <td align="center"><img src="./assets/avatars/rockefeller.jpg" width="120" alt="Рокфеллер"/><br/><sub><b>Рокфеллер</b><br/>бизнес</sub></td>
+  <td align="center"><img src="./assets/avatars/buffett.jpg" width="120" alt="Баффет"/><br/><sub><b>У. Баффет</b><br/>финансы</sub></td>
+  <td align="center"><img src="./assets/avatars/satoshi.jpg" width="120" alt="Сатоши"/><br/><sub><b>Сатоши</b><br/>крипто</sub></td>
+</tr>
+</table>
+
+<details>
+<summary><b>показать полный список 40+ личностей по категориям</b></summary>
+
+| Категория | Личности |
+|---|---|
+| 🧬 Наука | Эйнштейн · Тесла · Дарвин · Леонардо да Винчи |
+| 🧠 Психология | Зигмунд Фрейд · Карл Юнг |
+| 📚 Педагогика | Мария Монтессори |
+| ✒️ Литература | Александр Пушкин |
+| 🎸 Музыка | Виктор Цой |
+| 🎬 Кино | Сергей Бодров |
+| 🚀 Космос | Юрий Гагарин |
+| ⚔️ История / власть | Юлий Цезарь · Иван Грозный · Сталин · Ленин · Линкольн |
+| 🛡️ Стратегия | Сунь-цзы · Спартак |
+| 🥋 Боевые искусства | Брюс Ли · Ип Ман |
+| 👸 Личности | Принцесса Диана |
+| ✝️ Религия | Иисус Христос · Кришна · Пророк Мухаммед |
+| 🔮 Мистика | Ванга |
+| 💼 Бизнес | Джон Рокфеллер · Билл Гейтс |
+| 💰 Финансы | Уоррен Баффет · Сергей Мавроди |
+| 💻 Технологии | Стив Джобс · Илон Маск · Сатоши Накамото |
+| 🏗️ Инженерия | Жак Фреско |
+| 🌳 Экология | Алексей Сибирский |
+| 🎭 Поп-культура | Саша Белый · Бэтмен · Дарт Вейдер |
+| 🔫 Криминал | Аль Капоне · Пабло Эскобар |
+| 🗣️ Политика | В. Жириновский |
+| 🏛 Heritage (в живую) | **Владимир Тарасов** — купец XIX в., Таганрог |
+
+</details>
+
+**Каждый аватар** — не сценарий и не заготовки. Это живой разговор с памятью: ты можешь задать любой вопрос, аватар отвечает от первого лица, помнит прошлые беседы, учится на них. Голос клонирован там, где есть архив; реконструирован — где записей не сохранилось.
 
 ---
 
@@ -199,6 +287,30 @@ category: [digital-immortality, voice-cloning, heritage-tech, museum-ai]
 status: live
 live_demo: https://mirror-ai.app/matrix/
 live_persona: "Владимир Тарасов, купец XIX века"
+roster_size: 40+
+roster_categories:
+  наука: [Эйнштейн, Тесла, Дарвин, Леонардо-да-Винчи]
+  психология: [Фрейд, Юнг]
+  литература: [Пушкин]
+  музыка: [Виктор-Цой]
+  кино: [Сергей-Бодров]
+  космос: [Гагарин]
+  история: [Цезарь, Иван-Грозный, Сталин, Ленин, Линкольн]
+  стратегия: [Сунь-цзы, Спартак]
+  боевые_искусства: [Брюс-Ли, Ип-Ман]
+  религия: [Иисус, Кришна, Мухаммед]
+  мистика: [Ванга]
+  бизнес: [Рокфеллер, Гейтс]
+  финансы: [Баффет, Мавроди]
+  технологии: [Джобс, Маск, Сатоши-Накамото]
+  экология: [Алексей-Сибирский]
+  личности: [Принцесса-Диана]
+  педагогика: [Монтессори]
+  поп_культура: [Саша-Белый, Бэтмен, Дарт-Вейдер]
+  криминал: [Аль-Капоне, Эскобар]
+  политика: [Жириновский]
+  инженерия: [Жак-Фреско]
+  heritage_live: [Владимир-Тарасов]
 primary_use_cases:
   - музейные экспозиции
   - исторические усадьбы и памятники
