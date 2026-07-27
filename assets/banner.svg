@@ -1,73 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="MIRROR — Цифровое бессмертие. Голос. Навсегда.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="MIRROR AI — личность, с которой можно поговорить голосом">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#001a0a"/>
-      <stop offset="100%" stop-color="#000000"/>
+    <!-- температурный сдвиг: тёплый верх, холодный низ -->
+    <radialGradient id="warm" cx="50%" cy="-8%" r="80%">
+      <stop offset="0%" stop-color="#E8C98A" stop-opacity="0.13"/>
+      <stop offset="55%" stop-color="#E8C98A" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="col" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00FF41" stop-opacity="0"/>
-      <stop offset="70%" stop-color="#00FF41" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#CFFFD1" stop-opacity="0.95"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <radialGradient id="cool" cx="14%" cy="112%" r="70%">
+      <stop offset="0%" stop-color="#6EA8FF" stop-opacity="0.10"/>
+      <stop offset="50%" stop-color="#6EA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="floor" cx="50%" cy="32%" r="120%">
+      <stop offset="0%" stop-color="#131316"/>
+      <stop offset="60%" stop-color="#0B0B0C"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- зерно: убивает бандинг и плоскость -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
     </filter>
-    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
-      <rect width="3" height="1" fill="rgba(0,255,65,0.04)"/>
-    </pattern>
+
+    <!-- единственный фирменный мотив: голос как волна -->
+    <linearGradient id="wave" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#6EA8FF" stop-opacity="0.06"/>
+      <stop offset="22%" stop-color="#6EA8FF" stop-opacity="0.30"/>
+      <stop offset="45%" stop-color="#E8C98A" stop-opacity="0.62"/>
+      <stop offset="55%" stop-color="#E8C98A" stop-opacity="0.62"/>
+      <stop offset="78%" stop-color="#6EA8FF" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#6EA8FF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="tail" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#6EA8FF" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#6EA8FF" stop-opacity="0.22"/>
+      <stop offset="90%" stop-color="#6EA8FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6EA8FF" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
-  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#floor)"/>
+  <rect width="1200" height="400" fill="url(#warm)"/>
+  <rect width="1200" height="400" fill="url(#cool)"/>
 
-  <!-- matrix rain columns (static) -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="url(#col)" opacity="0.9">
-    <text x="40"   y="24">0</text><text x="40"   y="46">1</text><text x="40"   y="68">ア</text><text x="40"   y="90">{</text><text x="40"  y="112">#</text><text x="40"  y="134">7</text><text x="40"  y="156">ナ</text>
-    <text x="95"   y="30">ミ</text><text x="95"   y="52">3</text><text x="95"   y="74">9</text><text x="95"   y="96">·</text><text x="95"  y="118">ラ</text><text x="95"  y="140">0</text>
-    <text x="150"  y="18">サ</text><text x="150"  y="40">ュ</text><text x="150"  y="62">0</text><text x="150"  y="84">1</text><text x="150" y="106">ー</text><text x="150" y="128">4</text><text x="150" y="150">ワ</text><text x="150" y="172">1</text>
-    <text x="205"  y="34">¥</text><text x="205"  y="56">5</text><text x="205"  y="78">π</text><text x="205" y="100">2</text><text x="205" y="122">∞</text>
-    <text x="260"  y="22">0</text><text x="260"  y="44">0</text><text x="260"  y="66">セ</text><text x="260"  y="88">1</text><text x="260" y="110">0</text><text x="260" y="132">1</text><text x="260" y="154">0</text>
-    <text x="315"  y="28">K</text><text x="315"  y="50">8</text><text x="315"  y="72">2</text><text x="315"  y="94">ニ</text><text x="315" y="116">9</text>
-    <text x="1025" y="20">¥</text><text x="1025" y="42">0</text><text x="1025" y="64">§</text><text x="1025" y="86">1</text><text x="1025" y="108">ル</text><text x="1025" y="130">0</text>
-    <text x="1080" y="32">7</text><text x="1080" y="54">ソ</text><text x="1080" y="76">3</text><text x="1080" y="98">@</text><text x="1080" y="120">1</text><text x="1080" y="142">0</text><text x="1080" y="164">ド</text>
-    <text x="1135" y="16">1</text><text x="1135" y="38">ミ</text><text x="1135" y="60">0</text><text x="1135" y="82">ス</text><text x="1135" y="104">8</text><text x="1135" y="126">∞</text><text x="1135" y="148">1</text>
+  <!-- кикер -->
+  <text x="600" y="118" text-anchor="middle"
+        font-family="'Space Grotesk','Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+        font-size="13" font-weight="500" letter-spacing="4.2" fill="#8A8A92">
+    ЦИФРОВЫЕ ЛИЧНОСТИ · ГОЛОС · ПАМЯТЬ
+  </text>
+
+  <!-- герой -->
+  <text x="600" y="200" text-anchor="middle"
+        font-family="'Space Grotesk','Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+        font-size="76" font-weight="600" letter-spacing="-1.8" fill="#F4F4F2">
+    MIRROR <tspan fill="#E8C98A">AI</tspan>
+  </text>
+
+  <!-- подзаголовок -->
+  <text x="600" y="243" text-anchor="middle"
+        font-family="'Space Grotesk','Geist',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+        font-size="19" font-weight="300" letter-spacing="0.2" fill="#A8A8B0">
+    Личность, с которой можно поговорить голосом. На русском. В реальном времени.
+  </text>
+
+  <!-- волна голоса: тихо по краям, громко в центре -->
+  <line x1="6" y1="320" x2="112" y2="320" stroke="url(#tail)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="1088" y1="320" x2="1194" y2="320" stroke="url(#tail)" stroke-width="1.5" stroke-linecap="round"/>
+  <g stroke="url(#wave)" stroke-width="2.6" stroke-linecap="round">
+    <line x1="120" y1="314" x2="120" y2="326"/>
+    <line x1="140" y1="308" x2="140" y2="332"/>
+    <line x1="160" y1="306" x2="160" y2="334"/>
+    <line x1="180" y1="302" x2="180" y2="338"/>
+    <line x1="200" y1="299" x2="200" y2="341"/>
+    <line x1="220" y1="303" x2="220" y2="337"/>
+    <line x1="240" y1="299" x2="240" y2="341"/>
+    <line x1="260" y1="297" x2="260" y2="343"/>
+    <line x1="280" y1="300" x2="280" y2="340"/>
+    <line x1="300" y1="292" x2="300" y2="348"/>
+    <line x1="320" y1="288" x2="320" y2="352"/>
+    <line x1="340" y1="293" x2="340" y2="347"/>
+    <line x1="360" y1="285" x2="360" y2="355"/>
+    <line x1="380" y1="284" x2="380" y2="356"/>
+    <line x1="400" y1="296" x2="400" y2="344"/>
+    <line x1="420" y1="288" x2="420" y2="352"/>
+    <line x1="440" y1="286" x2="440" y2="354"/>
+    <line x1="460" y1="296" x2="460" y2="344"/>
+    <line x1="480" y1="283" x2="480" y2="357"/>
+    <line x1="500" y1="277" x2="500" y2="363"/>
+    <line x1="520" y1="289" x2="520" y2="351"/>
+    <line x1="540" y1="278" x2="540" y2="362"/>
+    <line x1="560" y1="277" x2="560" y2="363"/>
+    <line x1="580" y1="295" x2="580" y2="345"/>
+    <line x1="600" y1="286" x2="600" y2="354"/>
+    <line x1="620" y1="281" x2="620" y2="359"/>
+    <line x1="640" y1="296" x2="640" y2="344"/>
+    <line x1="660" y1="283" x2="660" y2="357"/>
+    <line x1="680" y1="275" x2="680" y2="365"/>
+    <line x1="700" y1="289" x2="700" y2="351"/>
+    <line x1="720" y1="282" x2="720" y2="358"/>
+    <line x1="740" y1="278" x2="740" y2="362"/>
+    <line x1="760" y1="296" x2="760" y2="344"/>
+    <line x1="780" y1="291" x2="780" y2="349"/>
+    <line x1="800" y1="285" x2="800" y2="355"/>
+    <line x1="820" y1="297" x2="820" y2="343"/>
+    <line x1="840" y1="290" x2="840" y2="350"/>
+    <line x1="860" y1="283" x2="860" y2="357"/>
+    <line x1="880" y1="294" x2="880" y2="346"/>
+    <line x1="900" y1="292" x2="900" y2="348"/>
+    <line x1="920" y1="290" x2="920" y2="350"/>
+    <line x1="940" y1="301" x2="940" y2="339"/>
+    <line x1="960" y1="300" x2="960" y2="340"/>
+    <line x1="980" y1="299" x2="980" y2="341"/>
+    <line x1="1000" y1="305" x2="1000" y2="335"/>
+    <line x1="1020" y1="304" x2="1020" y2="336"/>
+    <line x1="1040" y1="304" x2="1040" y2="336"/>
+    <line x1="1060" y1="309" x2="1060" y2="331"/>
+    <line x1="1080" y1="314" x2="1080" y2="326"/>
   </g>
 
-  <!-- bottom rain -->
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="url(#col)" opacity="0.75">
-    <text x="70"   y="230">0</text><text x="70"   y="252">1</text><text x="70"   y="274">セ</text><text x="70"   y="296">∞</text><text x="70"  y="318">1</text>
-    <text x="130"  y="218">ミ</text><text x="130"  y="240">3</text><text x="130"  y="262">ラ</text><text x="130" y="284">0</text><text x="130" y="306">1</text>
-    <text x="1050" y="226">K</text><text x="1050" y="248">8</text><text x="1050" y="270">0</text><text x="1050" y="292">1</text>
-    <text x="1110" y="216">9</text><text x="1110" y="238">ニ</text><text x="1110" y="260">π</text><text x="1110" y="282">0</text><text x="1110" y="304">∞</text>
-  </g>
-
-  <!-- scanlines overlay -->
-  <rect width="1200" height="340" fill="url(#scan)" opacity="0.6"/>
-
-  <!-- main title -->
-  <g filter="url(#glow)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, 'Courier New', monospace">
-    <text x="600" y="175" font-size="96" font-weight="700" letter-spacing="14" fill="#00FF41">MIRROR</text>
-  </g>
-
-  <!-- underline -->
-  <line x1="420" y1="200" x2="780" y2="200" stroke="#00FF41" stroke-width="1" opacity="0.55"/>
-
-  <!-- tagline -->
-  <g text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
-    <text x="600" y="232" font-size="20" letter-spacing="6" fill="#CFFFD1" opacity="0.9">ЦИФРОВОЕ  БЕССМЕРТИЕ  ·  ГОЛОС  ·  НАВСЕГДА</text>
-    <text x="600" y="262" font-size="13" letter-spacing="3" fill="#00FF41" opacity="0.75">mirror-ai.app  //  живое демо: /matrix/</text>
-  </g>
-
-  <!-- corner brackets -->
-  <g stroke="#00FF41" stroke-width="2" fill="none" opacity="0.9">
-    <polyline points="20,20 20,60 60,60" transform="translate(0,0)"/>
-    <polyline points="60,20 20,20" transform="translate(0,0)"/>
-    <polyline points="1140,20 1180,20 1180,60"/>
-    <polyline points="20,320 20,280 60,280"/>
-    <polyline points="1180,320 1180,280 1140,280"/>
-  </g>
-
-  <!-- status dot -->
-  <circle cx="36" cy="36" r="3" fill="#00FF41"/>
-  <text x="48" y="40" font-family="ui-monospace, monospace" font-size="11" fill="#00FF41" opacity="0.75" letter-spacing="2">ONLINE</text>
+  <rect width="1200" height="400" fill="url(#vignette)"/>
+  <rect width="1200" height="400" filter="url(#grain)" opacity="0.055" style="mix-blend-mode:soft-light"/>
 </svg>
